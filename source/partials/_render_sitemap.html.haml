@@ -1,0 +1,12 @@
+- if options[:group_directories]
+  - groupings.each do |k, v|
+    %h2= k.titleize
+    // so titleize is a thing
+    %ul.resource-list
+      - v.each do |page|
+        %li= link_to page.data.title || page.destination_path, page.destination_path
+- else
+  %ul.resource-list
+  - sitemap.resources.find_all{|p| p.source_file.match(/\.html/) }.each do |page|
+    -if !page.source_file.include? 'index.html'
+      %li= link_to page.data.title || page.destination_path, page.destination_path

@@ -1,0 +1,100 @@
+## \#TODO - [PROJECT NAME]
+
+## brief intro to the project
+* \#TODO - EVERY PROJECT - Link to Basecamp 
+
+## Team members
+\#TODO - EVERY PROJECT
+  * **Round X** (Date) 
+    * -Dev
+    * -Design
+    * -PM
+    * Client contacts
+    * External devs (contract, TWG, etc)
+
+## Logins
+* live info
+    * Admin Info
+
+* staging info
+    * Admin info
+* any other credentials (ie. Git repos, etc)
+
+## Requirements
+- Middleman 3.0 (https://github.com/middleman/middleman) and its gem dependencies
+- Ruby > 1.8.7
+- \#TODO - EVERY PROJECT [YOUR REQUIREMENTS]
+
+***
+
+## Middleman Documentation
+
+You can find information about this static site generator at its [homepage](http://middlemanapp.com/).
+In particular, these elements were used from this generator:
+
+- [SCSS and Compass](http://middlemanapp.com/templates/sass-and-compass/)
+- [Template helpers](http://middlemanapp.com/templates/helpers/)
+- [Templates, Layouts & Partials](http://middlemanapp.com/templates/templates-layouts-partials/)
+- [YAML Frontmatter](http://middlemanapp.com/metadata/yaml-frontmatter/)
+
+### How to install
+
+Make sure you have ruby installed and then run
+
+    gem install middleman
+
+### How to run
+In the root of the directory, to run the server use the command:
+
+    middleman server
+
+or simply
+
+    middleman
+
+This will start a server at http://localhost:4567.
+
+### How to build
+In the root of the directory, to build use to command:
+
+    middleman build
+
+This will create / update the build/ folder with a deliverable.
+
+### Errors & gotchas
+If, for some odd reason, middleman refuses to run, try prefixing the command with bundle exec.
+
+    bundle exec middleman
+
+You should always use the template helpers for assets such as HTML IMGs, scripts and stylesheets. Using these will correct the paths when transitioning from a live server to a build.
+
+***
+
+## Workflow
+* What was the workflow used for delivery?  This can be really helpful
+    
+    ie.
+
+    * did you usually go on site?
+    * did you ever push to a 3rd party repo?
+    * breakdown of responsibility between devs
+
+## Data
+* location of test data
+* info on how to get live data/staging data
+
+## Hosting
+
+## Plugins
+
+* Brief list of plug-ins and any implementation details
+* This includes any complex middleman implementation details (re. layouts, partials, etc)
+
+### Wordpress
+
+### jQuery
+
+### 3rd party
+  * Wufoo ?
+  * MailChimp? 
+  * etc

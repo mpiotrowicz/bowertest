@@ -1,0 +1,45 @@
+$footer_height: 60px;
+$page_width_max: 960px;
+$page_width_min: 768px;
+
+html, body {
+  height: 100%;
+}
+
+/*
+ * Sticky Footer dirty work
+ */
+#ContentWrapper {
+  min-height: 100%;
+}
+#Main {
+  padding-bottom: $footer_height;
+  overflow:auto;
+}
+#Footer {
+  position: relative;
+  margin-top: -1 * $footer_height;
+  height: $footer_height;
+  clear:both;
+} 
+body:before { /*Opera Fix*/
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
+}
+
+.chrome-container .chrome,
+#ContentContainer,
+#Footer > div {
+  @extend %pagewidth;
+}
+
+
+%pagewidth {
+  margin: 0 auto;
+  max-width: $page_width_max;
+  min-width: $page_width_min;
+  width: 80%;
+}

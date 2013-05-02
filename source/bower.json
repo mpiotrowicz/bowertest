@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "font-awesome": "~3.0.2",
+    "chosen": "~0.9.14",
+    "requirejs": "~2.1.5",
+    "handlebars.js": "~1.0.10"
+  }
+}
