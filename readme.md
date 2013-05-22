@@ -40,3 +40,6 @@ This will likely work with Middleman 2.x, but it's optimized for Middleman 3.x. 
   * `:sitemap_partial` - string (default: 'partials/_render_sitemap.html.haml') - the location of the partial to be used to render the sitemap
   * `:exclude_directories` - array (default: []) - An array of directories to ignore from the sitemap, i.e. ['documentation', 'secret_dir'].  Worth noting that these are just the strings used to test file locations against.  Consequently, there's no nesting currently built in (more than the top level) and files containing this name will be excluded as well (so if you ignore the 'documentation' folder, '/documentation.html.haml' may be ignored too - needs more testing)
 * You can also ignore individual templates by adding `hide_in_sitemap: true` to the YAML data at the top of a page (note: if changes aren't being reflected in the index page, try restarting your middleman server)
+
+## Grunt
+* https://github.com/gruntjs/grunt-init-gruntfile

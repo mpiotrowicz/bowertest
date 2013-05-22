@@ -83,6 +83,13 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :fonts_dir, 'fonts'
+
+ignore '*/vendor/**/*.html'
+ignore '**/components'
+ignore '**/vendor/components/*'
+ignore '**/node_modules'
+
 # Build-specific configuration
 configure :build do
 
@@ -111,4 +118,8 @@ configure :build do
 
   # Ignore readme's in build
   ignore '*.md' 
+  ignore '*/vendor/**/*.html'
+  ignore '**/components'
+  ignore '**/vendor/components/*'
+  ignore '**/node_modules'
 end
