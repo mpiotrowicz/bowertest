@@ -4,14 +4,6 @@ require "sprockets-helpers"
 require "sass"
 require "index_builder.rb"
 
-activate :jc_index_builder, {
-  :include_prototypes => 'yes', # 'yes', 'no', 'only'
-  :prototypes_dir => 'prototypes/',
-  :group_directories => true,
-  :sitemap_partial => 'partials/_render_sitemap.html.haml',
-  :exclude_directories => [] # Pass an array of strings, ie. ['prototypes', 'documentation']
-}
-
 activate :sprockets
 
 #Livereload
